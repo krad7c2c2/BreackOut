@@ -24,6 +24,7 @@ public class Jugador : MonoBehaviour
     {
 
         //mueve con el teclado
+        /*
         if (Input.GetKey(KeyCode.RightArrow)) { //mueve a la derecha
             transform.Translate(Vector3.down * velocidadPadle * Time.deltaTime);
         }
@@ -40,10 +41,10 @@ public class Jugador : MonoBehaviour
             pos.x = limiteX;
         }
         transform.position = pos; //cambia la posicion del objeto
-        
+        */
 
         //mueve con el control..
-        /*
+        
         transform.Translate(Input.GetAxis("Horizontal") * Vector3.down * velocidadPadle * Time.deltaTime);
         Vector3 pos = transform.position;
         if (pos.x < -limiteX)
@@ -55,8 +56,7 @@ public class Jugador : MonoBehaviour
             pos.x = limiteX;
         }
         transform.position = pos; //cambia la posicion del objeto
-        */
-
+       
 
         /* actualizar con el mouse
         //mueve el paddle
