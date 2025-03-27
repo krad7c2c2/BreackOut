@@ -6,8 +6,8 @@ public class Bloque_Caucho : Bloque
 {
 
     //propiedades de bloque: 
-    bool velocidadDoble = true; //retorna la pelota a una velocidad mayor. 
-    bool dobleImpacto = true; // al rebotar la pelota e impactar con otros bloques destruye todos en linea recta, siempre y cuando sean de tipo madera y cristal. 
+    //bool velocidadDoble = true; //retorna la pelota a una velocidad mayor. 
+    //bool dobleImpacto = true; // al rebotar la pelota e impactar con otros bloques destruye todos en linea recta, siempre y cuando sean de tipo madera y cristal. 
    
 
     // Start is called before the first frame update
@@ -16,9 +16,10 @@ public class Bloque_Caucho : Bloque
         resistencia = 6;
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void RebotarBola(Collision collision)
     {
-        
+        base.RebotarBola(collision);
     }
+
+
 }
