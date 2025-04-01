@@ -7,7 +7,7 @@ public class Bola : MonoBehaviour
 {
 
     bool isGameStarted = false;
-    [SerializeField] public float velociadBola = 10.0f;
+    [SerializeField] public float velociadBola = 40.0f;
 
     Vector3 ultimaPosicion = Vector3.zero;
     Vector3 direccion = Vector3.zero;
@@ -39,6 +39,7 @@ public class Bola : MonoBehaviour
     {
 
         if (control.salioAbajo) {
+            Debug.Log("Sali por debajo");
             BolaDestruida.Invoke();
             Destroy(this.gameObject);
         }

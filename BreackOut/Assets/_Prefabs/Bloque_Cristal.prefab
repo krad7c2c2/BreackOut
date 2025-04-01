@@ -134,7 +134,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!114 &-719046265108319038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,6 +147,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07efc0f9961269844abd6b81d0108ff9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  resistencia: 1
+  AumentaPuntaje:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &2450478417354898676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,3 +163,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07efc0f9961269844abd6b81d0108ff9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  resistencia: 1
+  AumentaPuntaje:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Puntaje, Assembly-CSharp
+        m_MethodName: AumentarPuntaje
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 50
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
